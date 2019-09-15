@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <h1>Formulario Registro</h1>
+                <form action="" (submit)="onSubmitLogin()">
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" class="form-control" ([ngModel])="email" id="email" name="email" placeholder="Ingressar Email">
+                    </div>
+                    <div class="form-group">
+                        <label>Contrasena</label>
+                        <input type="password" class="form-control" ([ngModel])="clave" id="clave" name="clave" placeholder="Ingressar Clave">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Registrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

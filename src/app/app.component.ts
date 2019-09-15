@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewContainerRef } from '@angular/core';
+import { ToastsManager } from 'ng2-toastr/ng2-toastr';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'autentificacion';
+  constructor(private toastsManager:ToastsManager, vcr:ViewContainerRef) {
+    this.toastsManager.setRootViewContainerRef(vcr);
+
+   // this.toastsManager.success('puebra exitosa', 'aplicacion autentificacion');
+  }
 }
